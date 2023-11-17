@@ -53,8 +53,8 @@ ul li:hover {
 }
 
 .the-band {
-    width: 70%;
-    margin: 70px auto;
+    width: 60%;
+    margin: 70px auto 0px auto;
     height: 350px;
     text-align: center;
 
@@ -72,7 +72,7 @@ ul li:hover {
     width: 80%;
     text-align: justify;
     line-height: 1.5rem;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     font-weight: 500;
     font-size: 0.9rem;
     /* word-spacing: 0.3rem; */
@@ -83,6 +83,7 @@ ul li:hover {
     color: darkgrey;
     letter-spacing: 2px;
     font-size: 0.85rem;
+    margin: 25px 0 5px 0;
     text-align: center;
     font-style: italic;
 }
@@ -91,17 +92,18 @@ ul li:hover {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    margin: 10px auto;
+    margin: 5px auto;
 
 }
 
-.card-div p {
+.card-div span p {
     text-align: center;
     font-size: 0.90rem;
+    margin-top: 5px;
 }
 
 .card-div img {
-    width: 150px;
+    width: 140px;
     border-radius: 5px;
 }
 
@@ -176,10 +178,6 @@ li p {
     align-items: center;
     width: 60%;
     margin: 25px auto;
-
-
-
-
 }
 
 .card {
@@ -188,11 +186,20 @@ li p {
     background-color: white;
     color: black;
 
-
 }
 
 .card img {
     width: 100%;
+    overflow: clip;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: black;
+}
+
+.card img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: black;
 }
 
 .card p {
@@ -201,6 +208,10 @@ li p {
     padding-left: 10px;
     font-style: normal;
     text-align: justify;
+}
+
+.name {
+    margin-bottom: 15px;
 }
 
 .card p.city {
@@ -227,18 +238,96 @@ li p {
     color: white;
     background-color: black;
     border: none;
-
-
 }
-
 .card button:hover {
     background-color: darkslategrey;
     cursor: pointer;
 }
-.contact{
+.contact {
     width: 100%;
-    height: 450px;
+    height: 360px;
 }
-.contact-info h3{
+.contact h3{
+    text-align: center;
+    padding: 10px;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.contact p{
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 8px;
+    font-style: italic;
+    color: grey;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+}
+.company-details{
+    width: 50%;
+}
+.adress li{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    padding: 0;
+    
+}
+.adress li:hover{
+    background-color: white;
+    cursor: default;
 
+}
+.form{
+    width: 50%;
+    margin-left: 2rem;
+}
+.form input{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+
+}
+.message{
+    display: block;
+    width: 73%; 
+}
+.form button{
+    padding: 10px 22px;
+    position: relative;
+    left: 62%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+.form button:hover{
+    background-color: grey;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.map-img{
+    background-image: url("./Images/map.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    opacity: 0.7;
+}
+.footer{
+    width: 100%;
+    height: 140px;
+}
+.footer p{
+    padding: 10px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 1.1rem;
+    color: grey;
 }

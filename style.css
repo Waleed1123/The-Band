@@ -28,6 +28,15 @@ ul li:hover {
     transition: all 0.5s;
 }
 
+li.search {
+    margin-left: 515px;
+    margin-right: 0;
+}
+
+li.search:hover {
+    background-color: darkred;
+}
+
 .img-div {
     background-image: url("./Images/la.jpg");
     background-size: cover;
@@ -239,15 +248,18 @@ li p {
     background-color: black;
     border: none;
 }
+
 .card button:hover {
     background-color: darkslategrey;
     cursor: pointer;
 }
+
 .contact {
     width: 100%;
     height: 360px;
 }
-.contact h3{
+
+.contact h3 {
     text-align: center;
     padding: 10px;
     margin-top: 4rem;
@@ -255,79 +267,101 @@ li p {
     font-weight: lighter;
     letter-spacing: 2px;
 }
-.contact p{
+
+.contact p {
     text-align: center;
     font-size: 0.85rem;
     padding: 8px;
     font-style: italic;
     color: grey;
 }
-.details{
+
+.details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 65%;
     margin: 30px auto;
 }
-.company-details{
+
+.company-details {
     width: 50%;
 }
-.adress li{
+
+.adress li {
     display: block;
     font-size: 1.2rem;
     margin-bottom: 5px;
     padding: 0;
-    
+
 }
-.adress li:hover{
+
+.adress li:hover {
     background-color: white;
     cursor: default;
 
 }
-.form{
+
+.form {
     width: 50%;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
-.form input{
+
+.form input {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 0.9rem;
 
 }
-.message{
-    display: block;
-    width: 73%; 
+
+.form input:focus {
+    background-color: rgba(206, 243, 255, 0.483);
 }
-.form button{
+
+.message {
+    display: block;
+    width: 89%;
+}
+
+.form button {
     padding: 10px 22px;
     position: relative;
-    left: 62%;
+    left: 75%;
     border: none;
     background-color: black;
     color: white;
     font-size: 1rem;
 }
-.form button:hover{
+
+.form button:hover {
     background-color: grey;
     transition: all 0.5s;
     cursor: pointer;
 
 }
-.map-img{
+
+.map-img {
     background-image: url("./Images/map.jpg");
     background-size: cover;
     width: 100%;
     height: 700px;
     opacity: 0.7;
 }
-.footer{
+
+.footer {
     width: 100%;
     height: 140px;
 }
-.footer p{
+
+.footer p {
     padding: 10px;
     text-align: center;
     margin-top: 70px;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: grey;
+}
+
+.adress li i {
+    font-size: 1rem;
+    margin-right: 5px;
 }
